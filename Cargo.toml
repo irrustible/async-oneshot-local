@@ -1,0 +1,21 @@
+[package]
+name = "async-oneshot-local"
+version = "0.2.0"
+description = "A fast, small, full-featured, async-aware, single-threaded oneshot channel."
+keywords = ["oneshot", "channel"]
+categories = ["asynchronous", "concurrency", "data-structures"]
+authors = ["James Laver <james.laver@gmail.com>"]
+homepage = "https://github.com/irrustible/async-oneshot-local"
+repository = "https://github.com/irrustible/async-oneshot-local"
+documentation = "https://docs.rs/async-oneshot-local"
+license = "MPL-2.0"
+edition = "2018"
+readme = "README.md"
+
+[dependencies]
+# futures-micro = "0.1"
+futures-micro = { git = "https://github.com/irrustible/futures-micro", branch = "main" }
+# futures-micro = { path = "../futures-micro"}
+
+[dev-dependencies]
+futures-lite="0.1"
